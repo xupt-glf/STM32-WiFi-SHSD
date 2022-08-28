@@ -14,7 +14,7 @@ stm32 单片机为核心，设计一套基于wifi网络的智能家居控制系�
 
 STM32F103芯片的最小系统电路主要由复位电路，时钟电路以及辅助电源电路组成。
 
-![Image1_STM32](.\image\Image1_STM32.png)
+![Image1_STM32](image/Image1_STM32.png)
 
 ### 2.2 ESP8266WIFI模块
 
@@ -24,7 +24,7 @@ ESP8266是硬件系统电路与软件手机APP通信的WIFI无线模块，他能
 
 电动机转动是需要有十几毫安的电流驱动，而单片机的IO引脚没有这么大的电流，无法驱动电动机转动，因此需要对IO口电流进行放大。我们采用了ULN2003电机驱动芯片来对电机进行驱动，ULN2003是一款高耐压，大电流的晶体管阵列，单个引脚最大输出电流500MA电流[11]，最高反向电压可达50V，输入控制电压在2.8V-24V。在ULN2003芯片的输入端接单片机的IO口，输出端接电机控制线，可以实现单片机对电机的控制。
 
-![Image2_ULN](.\image\Image2_ULN.png)
+![Image2_ULN](image/Image2_ULN.png)
 
 ### 2.4 液晶显示模块
 
@@ -53,16 +53,16 @@ ESP8266是硬件系统电路与软件手机APP通信的WIFI无线模块，他能
 
 原理图：
 
-![Image4_SCH](.\image\Image4_SCH.jpg)
+![Image4_SCH](image/Image4_SCH.jpg)
 
 PCB图：
 
-![Image5_PCB](.\image\Image5_PCB.jpg)
+![Image5_PCB](image/Image5_PCB.jpg)
 
 APP控制界面：
 
-![Image6_APP](.\image\Image6_APP.jpg)
+![Image6_APP](image/Image6_APP.jpg)
 
 实物图：
 
-### ![Image3_all](.\image\Image3_all.jpg)
+![Image3_all](image/Image3_all.jpg)
